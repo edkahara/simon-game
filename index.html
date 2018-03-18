@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Simon Game</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a Free Code Camp Project called Simon Game">
+    <meta name="keywords" content="HTML, CSS, JAVASCRIPT/JQUERY">
+    <meta name="author" content="Edward Njoroge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+    <audio id='topLeftSound' src='https://s3.amazonaws.com/freecodecamp/simonSound1.mp3' type='audio/mpeg'></audio>
+    <audio id='topRightSound' src='https://s3.amazonaws.com/freecodecamp/simonSound2.mp3' type='audio/mpeg'></audio>
+    <audio id='bottomLeftSound' src='https://s3.amazonaws.com/freecodecamp/simonSound3.mp3' type='audio/mpeg'></audio>
+    <audio id='bottomRightSound' src='https://s3.amazonaws.com/freecodecamp/simonSound4.mp3' type='audio/mpeg'></audio>
+  </head>
+  <body>
+    <!--simon game board-->
+    <div class='container main'>
+      <div class='semiCircle row'>
+        <button class='col-xs-6 quadrants btn' id='topLeft'></button>
+        <button class='col-xs-6 quadrants btn' id='topRight'></button>
+      </div>
+      <div class='semiCircle row'>
+        <button class='col-xs-6 quadrants btn' id='bottomLeft'></button>
+        <button class='col-xs-6 quadrants btn' id='bottomRight'></button>
+      </div>
+      <div id='innerCircle'>
+        <div id='brandName'>
+          <h1 class='text-center' id='simonTradeMark'>Simon</h1>
+        </div>
+        <div id='gameSettings'>
+          <div class='row'>
+            <div class='col-xs-1'></div>
+            <div class='col-xs-3'>
+              <div id='counterSection'>
+                <h4 class='text-center' id='counter'>--</h4>
+              </div>
+              <p>COUNT</p>
+            </div>
+            <div class='col-xs-3'>
+              <button class='btn startStrict' id='start'></button>
+              <p class='text-center'>START</p>
+            </div>
+            <div class='col-xs-3'>
+              <div id='strictMode'></div>
+              <button class='btn startStrict' id='strict'></button>
+              <p class='text-center'>STRICT</p>
+            </div>
+          </div>
+          <div class='row' id='onOff'>
+            <div class='col-xs-3'></div>
+            <div class='col-xs-9'>
+              <p class='onAndOff'>OFF</p>
+              <div class='onAndOff' id='onAndOffButtons'>
+                <button class='btn btn-primary' id='off'></button>
+                <button class='btn btn-primary' id='on'></button>
+              </div>
+              <p class='onAndOff'>ON</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

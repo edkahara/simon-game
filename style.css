@@ -1,0 +1,111 @@
+body {
+  height: 100%;
+}
+.main {
+  display: block;
+  position: absolute;
+  margin: 0 auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 400px;
+  width: 450px;
+}
+.semiCircle {
+  display: block;
+  position: relative;
+  top: 25%;
+  left: 45%;
+  transform: translate(-40.5%, -50%);
+  height: 50%;
+  width: 100%;
+}
+.quadrants {
+  background-color: black;
+  height: 200px;
+  width: 205px;
+  border: 10px solid black;
+}
+#topLeft {
+  background-color: green;
+  border-radius: 100% 0 0 0;
+}
+#topRight {
+  background-color: red;
+  border-radius: 0 100% 0 0;
+}
+#bottomLeft {
+  background-color: yellow;
+  border-radius: 0 0 0 100%;
+}
+#bottomRight {
+  background-color: blue;
+  border-radius: 0 0 100% 0;
+}
+#innerCircle {
+  display: block;
+  position: absolute;
+  margin: 0 auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  height: 240px;
+  width: 250px;
+  border-radius: 100%;
+  border: 10px solid black;
+}
+#brandName {
+  text-align: center;
+}
+#simonTradeMark {
+  font-family: fantasy;
+  font-weight: bold;
+  font-size: 60px;
+}
+#counterSection {
+  background-color: maroon;
+  border-radius: 25%;
+  border: 5px solid black;
+  opacity: 0.6;
+}
+#counter {
+  color: red;
+  font-weight: bold;
+  font-family: cursive;
+  font-size: 20px;
+}
+.startStrict {
+  height: 30px;
+  width: 20px;
+  border-radius: 100%;
+  border: 5px solid black;
+}
+#start {
+  margin-top: 50%;
+  background-color: red;
+}
+#strictMode {
+  height: 10px;
+  width: 10px;
+  margin: auto;
+  background-color: black;
+  border-radius: 50%;
+}
+#strict {
+  background-color: yellow;
+  margin-top: 5px;
+}
+p {
+  font-size: 10px;
+}
+.onAndOff {
+  display: inline-block;
+}
+#onAndOffButtons {
+  background-color: black;
+}
+#off, #on {
+  min-height: 20px;
+  min-width: 20px;
+}
